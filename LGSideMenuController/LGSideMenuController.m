@@ -125,8 +125,7 @@
 @property (strong, nonatomic) UIView *rootViewCoverViewForLeftView;
 @property (strong, nonatomic) UIView *rootViewCoverViewForRightView;
 
-@property (strong, nonatomic) UIView *leftViewCoverView;
-@property (strong, nonatomic) UIView *rightViewCoverView;
+
 
 @property (strong, nonatomic) UIImageView *backgroundImageView;
 
@@ -947,7 +946,7 @@
         
         if (presentationStyle != LGSideMenuPresentationStyleSlideAbove)
         {
-            _leftViewCoverView = [UIView new];
+            _leftViewCoverView = [UIImageView new];
             _leftViewCoverView.hidden = YES;
             [self.view insertSubview:_leftViewCoverView aboveSubview:_leftView];
         }
@@ -1067,7 +1066,7 @@
         
         if (presentationStyle != LGSideMenuPresentationStyleSlideAbove)
         {
-            _rightViewCoverView = [UIView new];
+            _rightViewCoverView = [UIImageView new];
             _rightViewCoverView.hidden = YES;
             [self.view insertSubview:_rightViewCoverView aboveSubview:_rightView];
         }
