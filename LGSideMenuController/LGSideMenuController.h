@@ -121,6 +121,10 @@ LGSideMenuPresentationStyle;
  */
 @property (assign, nonatomic) IBInspectable CGFloat rootViewScaleForRightView;
 
+
+@property (strong, nonatomic) UIImageView *leftViewCoverView;
+@property (strong, nonatomic) UIImageView *rightViewCoverView;
+
 /**
  Color that hides left view, when if is not showing.
  Only if (presentationStyle == LGSideMenuPresentationStyleSlideBelow || LGSideMenuPresentationStyleScaleFromBig || LGSideMenuPresentationStyleScaleFromLittle)
